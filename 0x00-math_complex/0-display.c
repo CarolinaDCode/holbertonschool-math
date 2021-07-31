@@ -11,12 +11,14 @@ void display_complex_number(complex c)
 		printf("%.6gi\n", c.im);
 
 	if (c.im < 0)
-		printf("%.6g - %.6gi\n", c.re, c.im * -1);
+	  printf("%.6g - %.6gi\n", c.re, c.im * -1);
 
-	else if (c.im > 0)
+	else if (c.im > 1)
 		printf("%.6g + %.6gi\n", c.re, c.im);
 
 	else if (c.im == 0)
 		printf("%.6g\n", c.re);
 
+	else if (c.im == 1)
+		printf("%.6g + i\n", c.re);
 }
