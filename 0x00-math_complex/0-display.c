@@ -8,7 +8,7 @@
 void display_complex_number(complex c)
 {
 	if (c.re == 0)
-		printf("%.6g\n", c.im);
+		printf("%.6gi\n", c.im);
 
 	if (c.im < 0)
 		printf("%.6g - %.6gi\n", c.re, c.im * -1);
